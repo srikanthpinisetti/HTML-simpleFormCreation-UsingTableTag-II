@@ -36,44 +36,83 @@
     </table> -->
   
 <!--Aligning the Form using table tag-->
-    <form>
-        
-        <h2> Trainee Details:</h2>
-        <table>
-            <tr>
-                <td><label for="name">Name</label></td>
-                <td><input type="text" id="name" /></td>
-            </tr>
-            <tr>
-                <td><label for="age">Age</label></td>
-                <td><input type="number" id="age"></td>
-            </tr>
-            <tr>
-                <td><label for="email">Email</label></td>
-                <td><input type="text" id="email"></td>
-            </tr>
-            <tr>
-                <td><label for="country">Nationality</label></td>
-                <td><select id="country">
-                        <option value="India">India</option>
-                        <option value="USA">USA</option>
-                        <option value="Europe">Europe</option>
-                        <option value="RestofWorld">Rest of the World</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><label>I am interested in</label></td>
-                <td><input type="checkbox" name="technology" value="angular">Angular
-                    <input type="checkbox" name="technology" value="react">React
-                    <input type="checkbox" name="technology" value="vuejs">VueJS
-                </td>
-            </tr>
-            <tr></tr>
-            <tr><td><input type="button" value="Submit"></td>
-            <td><input type="button" value="Reset"></td></tr>
-        </table>
-    </form>
+    <center>
+        <h3>Registration Form</h3>
+    </center>
 
+    <center>
+        <form name="registrationform">
+            
+            <table>
+                <tr>
+                    <td><label for="lname"> Last Name   </label></td>
+                    <td><input type="text" placeholder="Enter your Last Name" autofocus required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="fname"> First Name   </label></td>
+                    <td><input type="text" placeholder="Enter your First Name" autofocus required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="password"> Password   </label></td>
+                    <td><input type="password" name="userpass" id="pass" placeholder="Enter the Password" required autofocus pattern="[A-Za-z]{3}"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="gender"> Gender </label></td>
+                    <td><input type="radio" name="gender"> Male
+                        <input type="radio" name="gender"> Female
+                        <input type="radio" name="gender"> Others 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="section"> Section </label></td>
+                    <td>
+                        <select name="section" id="sec">
+                            <option value="Select"> Select </option>
+                            <option value="A"> A </option>
+                            <option value="B"> B </option>
+                            <option value="C"> C </option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="department"> Department </label></td>
+                    <td>
+                        <input list="streams">
+                        <datalist id="streams">
+                            <option value="ECE"></option>
+                            <option value="CSC"></option>
+                            <option value="Mech"></option>
+                            <option value="Aero"></option>
+                            <option value="Arch"></option>
+                        </datalist>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="address"> Address </label></td>
+                    <td><textarea name="add" id="add" cols="30" rows="4"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><button type="button"> Submit </button></td>
+                    <td><button type="reset"> Reset </button></td>
+                </tr>
+
+            </table>
+        </form>
+    </center><br><br>
+    
+<!-- Linking the Html-SimpleForm-I -->
+    <div>
+        <center>
+            <a href="simpleform.html">For Unalligned Html Form - HTML-SimpleForm-I(Git) </a>
+        </center>
+    </div>
+    
 </body>
 </html>
